@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | GyaanComputer</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7608727426286029"
+     crossorigin="anonymous"></script>
+     <meta name="description" content="My website provides information about the latest technology and computer knowledge. Stay up-to-date with the latest trends and advancements in the tech industry.">
+	<meta name="keywords" content="computer knowledge, latest technology, tech industry, information technology, tech trends">
+	<meta name="author" content="Shubham Mehar">
+    <style>
+        .container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        input {
+            width: 50%;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        .container img {
+            margin-bottom: 50px;
+            width: 50%;
+            height: 50%;
+        }
+
+        .container form {
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    {% extends "navbar.html" %}
+    {% block navbar %}
+
+    <div class="container ">
+        <img src="static/img/login.png" alt="Not found">
+        <form action="/login" method="post">
+            {% csrf_token %}
+
+            <label for="email">Email : </label>
+            <input type="text" name="email" placeholder="enter user Email" value="{{mail}}" required>
+            </br>
+            </br>
+            <label for="password">Password : </label>
+            <input type="password" name="password" placeholder="enter user password" required>
+            </br>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}" {% endif %} style="color: red;">{{ message }}</li>
+                    {% endfor %}
+            </ul>
+            {% endif %}
+            </br>
+            <input type="submit" class="btn btn-outline-primary">
+
+        </form>
+        {% endblock navbar %}
+
+</body>
+
+</html>

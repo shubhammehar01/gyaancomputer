@@ -1,0 +1,57 @@
+{% extends "navbar.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7608727426286029"
+     crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Starlink Satellite - Providing Global Internet Access</title>
+	<meta name="description" content="Learn about Starlink, a satellite internet constellation being developed by SpaceX to provide high-speed, low-latency internet access to people all over the world.">
+	<meta name="keywords" content="Starlink, satellite internet, SpaceX, low-latency, global internet access">
+	<meta name="author" content="Shubham Mehar">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    {% block navbar %}
+      
+    <div class="container">
+        <div class="img text-center">
+            <img src="static/img/starlink.webp" alt="not show" style="border-radius: 10px;"width="100%">
+        </div>
+	<header>
+		<h1>Starlink Satellite</h1>
+        
+		<nav>
+			<ul>
+				<li><a href="#about">About the Starlink Satellite </a></li>
+				<li><a href="#technology">Technology of Starlink Satellite</a></li>
+				<li><a href="#benefits">Benefits of Starlink Satellite</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section id="about">
+			<h2>About Starlink </h2>
+			<p>Starlink is a satellite internet constellation being developed by SpaceX to provide high-speed, low-latency internet access to people all over the world, particularly in areas where traditional broadband services are not available or are too expensive.</p>
+			<p>The Starlink constellation currently consists of over 1,000 satellites in orbit, and SpaceX plans to launch thousands more in the coming years.</p>
+		</section>
+		
+		<section id="technology">
+			<h2>Technology of Starlink Satellite</h2>
+			<p>Each Starlink satellite is equipped with advanced antennas and electronics that allow it to communicate with other satellites in the constellation and with ground stations on Earth. The satellites operate in low Earth orbit (LEO), providing low-latency internet access with speeds of up to 1 Gbps.</p>
+			<p>Starlink also includes a user terminal, known as a "dish," that customers can use to connect to the internet. The dish is designed to be easy to install and can be used anywhere with a clear view of the sky.</p>
+		</section>
+		
+		<section id="benefits">
+			<h2>Benefits of Starlink Satellite</h2>
+			<p>The Starlink system has the potential to bring high-speed internet access to people all over the world, including those in rural and remote areas where traditional broadband services are not available. This could help bridge the digital divide and provide new opportunities for education, commerce, and communication.</p>
+			<p>The system may also have applications in emergency response and disaster relief, where it can provide temporary internet access to affected areas. Additionally, the system could be used for military and government purposes.</p>
+		</section>
+	</main>
+</div>
+	{% endblock navbar %}
+	
+</body>
+</html>

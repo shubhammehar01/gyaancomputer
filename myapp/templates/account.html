@@ -1,0 +1,26 @@
+{% extends "navbar.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7608727426286029"
+     crossorigin="anonymous"></script>
+     <meta name="description" content="My website provides information about the latest technology and computer knowledge. Stay up-to-date with the latest trends and advancements in the tech industry.">
+	<meta name="keywords" content="computer knowledge, latest technology, tech industry, information technology, tech trends">
+	<meta name="author" content="Shubham Mehar">
+    <title>Account | GyaanComputer</title>
+</head>
+<body>
+    {% block navbar %}
+      <div class="container text-center">
+        <h3>Welcome,<b>{{fname}}&nbsp;{{lname}}</b> </h3>
+        <h5>Your <b>Phone Number</b> - {{phone}}</h5>
+        <h5>Your <b>email</b> Address - {{email}}</h5>
+        </br>
+        <a class="btn btn-outline-danger" href="signout" style="width:100px">SignOut</a>
+      </div>
+    {% endblock navbar %}
+</body>
+</html>

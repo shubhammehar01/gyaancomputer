@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp | GyaanComputer</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7608727426286029"
+     crossorigin="anonymous"></script>
+     <meta name="description" content="My website provides information about the latest technology and computer knowledge. Stay up-to-date with the latest trends and advancements in the tech industry.">
+	<meta name="keywords" content="computer knowledge, latest technology, tech industry, information technology, tech trends">
+	<meta name="author" content="Shubham Mehar">
+    <style>
+        .container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        input {
+            width: 50%;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        .container img {
+            margin-bottom: 50px;
+            width: 50%;
+            height: 50%;
+        }
+
+        .container form {
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    {% extends "navbar.html" %}
+    {% block navbar %}
+
+    <div class="container">
+        <img src="static/img/login.png"alt="img not found">
+        <form action="/signup" method="post">
+            {% csrf_token %}
+
+            <label for="fname">First-name : </label>
+            <input type="text" name="fname" placeholder="enter user first name" value="{{fname}}" required>
+            <br><br>
+            <label for="lname">Last Name : </label>
+            <input type="text" name="lname" placeholder="enter user last name" value="{{lname}}" required>
+            <br><br>
+            <label for="phone_no">Phone No. : </label>
+            <input type="text" name="number" placeholder="enter user phone number" value="{{phone}}" required>
+            <br><br>
+            <label for="Email">valid Email : </label>
+            <input type="email" name="email" placeholder="enter user email" value="{{email}}" required>
+            <br><br>
+            <label for="password">CreatePassword : </label>
+            <input type="password" name="password" placeholder="enter user password" value="{{password}}" required>
+            <br><br>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}" {% endif %} style="color:red;">{{ message }}</li>
+                    {% endfor %}
+            </ul>
+            {% endif %}
+            <input type="submit" class="btn btn-outline-primary">
+        </form>
+    </div>
+    {% endblock navbar %}
+
+
+</body>
+
+</html>

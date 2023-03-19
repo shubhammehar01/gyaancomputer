@@ -1,0 +1,166 @@
+{% extends "navbar.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GyaanComputer </title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7608727426286029"
+     crossorigin="anonymous"></script>
+    <meta name="description" content="My website provides information about the latest technology and computer knowledge. Stay up-to-date with the latest trends and advancements in the tech industry.">
+	<meta name="keywords" content="computer knowledge, latest technology, tech industry, information technology, tech trends">
+	<meta name="author" content="Shubham Mehar">
+    <style>
+        #tm-video-container {
+            max-height: 720px;
+            max-width: fit-content;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        #tm-video {
+            width: 100%;
+            height: auto;
+        }
+
+        #img {
+            
+            background-repeat: no-repeat;
+            text-align: center;
+            background: fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    {% block navbar %}
+    <div class="container-fluid">
+        <img id="img"src="static/img/banner.jpg" alt="img not found"width="100%" height="50%">
+    </div>
+    <hr>
+    <div class="container">
+        <div id="content" class="mx-auto tm-content-container">
+            <main>
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="tm-page-title mb-4">Our Tech articles</h2>
+
+                    </div>
+                </div>
+
+                <div class="row tm-catalog-item-list">
+                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                        <div class="position-relative tm-thumbnail-container">
+                            <img src="static/img/ChatGPT.webp" alt="Image" class="img-fluid tm-catalog-item-img">
+                            <a href="ChatGPT-AI-tool" class="position-absolute tm-img-overlay">
+                            </a>
+                        </div>
+                        <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                            <h3 class="tm-text-primary mb-3 tm-catalog-item-title"><a style="text-decoration: none;"
+                                    href="ChatGPT-AI-tool">Can ChatGPT take place of
+                                    programmers ?</a> </h3>
+                            <p class="tm-catalog-item-text">While ChatGPT is a powerful language model, it cannot
+                                completely take the place of programmers. Programmers are still needed to design and
+                                develop .....</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                        <div class="position-relative tm-thumbnail-container">
+                            <img src="static/img/cloud.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            <a href="What-is-Cloud-Computing" class="position-absolute tm-img-overlay"> </a>
+                        </div>
+                        <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                            <h3 class="tm-text-primary mb-3 tm-catalog-item-title"><a style="text-decoration: none;"
+                                    href="What-is-Cloud-Computing">Cloud Computing - An Introduction</a></h3>
+                            <p class="tm-catalog-item-text">it is a technology that allows users to access computing
+                                resources, such as servers, storage, databases, software, and applications, over the
+                                internet on an on-demand basis...</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                        <div class="position-relative tm-thumbnail-container">
+                            <img src="static/img/image.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            <a href="What-is-Quantum-Computing" class="position-absolute tm-img-overlay">
+                            </a>
+                        </div>
+                        <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                            <h3 class="tm-text-primary mb-3 tm-catalog-item-title"><a href="What-is-Quantum-Computing"
+                                    style="text-decoration: none;">Quantum Computing: A Beginner's Guide</a></h3>
+                            <p class="tm-catalog-item-text">Quantum computing is a new type of computing that is
+                                based on the principles of quantum mechanics. It uses qubits (quantum bits) instead
+                                of classical ...........</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                        <div class="position-relative tm-thumbnail-container">
+                            
+                            <img src="static/img/starlink.webp" alt="Image" class="img-fluid tm-catalog-item-img"></a>
+                            <a href="Starlink-Satellite-explain" class="position-absolute tm-img-overlay"></a>
+                        </div>
+                        <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                            <h3 class="tm-text-primary mb-3 tm-catalog-item-title"><a href="Starlink-Satellite-explain"
+                                    style="text-decoration: none;">Future of Starlink Satellite</a></h3>
+                            <p class="tm-catalog-item-text">Starlink is a satellite internet constellation being developed by SpaceX to provide high-speed, low-latency internet access to people all over the world, particularly in areas where traditional broadband services are not available or are too expensive</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                        <div class="position-relative tm-thumbnail-container">
+                            <img src="static/img/ai.webp" alt="Image" class="img-fluid tm-catalog-item-img">
+                            <a href="Future-of-Artificial-Intelligence" class="position-absolute tm-img-overlay"> 
+                            </a>
+                        </div>
+                        <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                            <h3 class="tm-text-primary mb-3 tm-catalog-item-title"><a href="Future-of-Artificial-Intelligence"
+                                    style="text-decoration: none;">Is AI Dangerous for Humans?</a></h3>
+                            <p class="tm-catalog-item-text">Artificial intelligence (AI) has the potential to transform virtually every aspect of our lives, from
+                                healthcare and transportation to finance and entertainment.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                        <div class="position-relative tm-thumbnail-container">
+                            <img src="static/img/augmented_r.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            <a href="Augmented-Reality" class="position-absolute tm-img-overlay"> 
+                            </a>
+                        </div>
+                        <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                            <h3 class="tm-text-primary mb-3 tm-catalog-item-title"><a href="Augmented-Reality"
+                                    style="text-decoration: none;">Augmented Reality: The Future of Interactivity</a></h3>
+                            <p class="tm-catalog-item-text">Augmented Reality (AR) is a technology that enhances our perception of the physical world by overlaying computer-generated information on top of it.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                        <div class="position-relative tm-thumbnail-container">
+                            <img src="static/img/bard.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            <a href="The-Bard-Google's-AI-Tool" class="position-absolute tm-img-overlay"> 
+                            </a>
+                        </div>
+                        <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                            <h3 class="tm-text-primary mb-3 tm-catalog-item-title"><a href="The-Bard-Google's-AI-Tool"
+                                    style="text-decoration: none;">The Bard: Google's AI Tool for Natural Language Processing</a></h3>
+                            <p class="tm-catalog-item-text">The Bard is a powerful natural language processing tool developed by Google. It is designed to generate human-like responses to text prompts and can be trained to produce specific types of output.</p>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    {% endblock navbar %}
+
+</body>
+
+</html>

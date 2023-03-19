@@ -1,0 +1,89 @@
+{% extends "navbar.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7608727426286029"
+    crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum-computing | GyaanComputer</title>
+    <meta name="description" content="Learn about the basics of quantum computing, its potential applications, and its limitations.">
+	<meta name="keywords" content="quantum computing, quantum mechanics, quantum information, qubits, superposition, entanglement">
+	<meta name="author" content="Shubham Mehar">
+</head>
+
+<body>
+    {% block navbar %}
+    <div class="container">
+        <div class="img text-center">
+            <img src="static/img/image.png" alt="not show" style="border-radius: 10px;"width="100%">
+        </div>
+        <header>
+            <h1>Quantum Computing: A Beginner's Guide</h1>
+        </header>
+
+        <main>
+            <article>
+                <section>
+                    <header>
+                        <h2>Introduction</h2>
+                    </header>
+                    <p>Quantum computing is a new type of computing that is based on the principles of quantum
+                        mechanics. It uses qubits (quantum bits) instead of classical bits to perform calculations.
+                        This allows for certain types of calculations to be performed much faster than with
+                        classical computers.</p>
+                </section>
+
+                <section>
+                    <header>
+                        <h2>What is Quantum Mechanics?</h2>
+                    </header>
+                    <p>Quantum mechanics is the branch of physics that studies the behavior of matter and energy at
+                        the smallest scales, such as atoms and subatomic particles. It is a very different way of
+                        looking at the world compared to classical physics, which is based on the laws of mechanics
+                        developed by Isaac Newton in the 17th century.</p>
+                </section>
+
+                <section>
+                    <header>
+                        <h2>How Does Quantum Computing Work?</h2>
+                    </header>
+                    <p>Quantum computing works by using qubits, which can be in a state of superposition and
+                        entanglement. Superposition means that a qubit can be in multiple states at the same time,
+                        whereas entanglement means that two qubits can be connected in a way that their states are
+                        dependent on each other.</p>
+                    <p>Quantum algorithms take advantage of these properties to perform certain types of
+                        calculations much faster than classical algorithms. For example, the famous Shor's algorithm
+                        can factor large numbers much faster than classical algorithms, which has important
+                        implications for cryptography.</p>
+                </section>
+
+                <section>
+                    <header>
+                        <h2>Potential Applications</h2>
+                    </header>
+                    <p>Quantum computing has the potential to revolutionize many fields, such as cryptography, drug
+                        discovery, and optimization problems. For example, it could be used to design new drugs much
+                        faster than with classical computers, or to optimize logistics and transportation networks.
+                    </p>
+                </section>
+
+                <section>
+                    <header>
+                        <h2>Limitations</h2>
+                    </header>
+                    <p>Quantum computing is still in its early stages and there are many challenges that need to be
+                        overcome before it can become a practical technology. One of the biggest challenges is the
+                        issue of quantum decoherence, which causes qubits to lose their coherence over time and make
+                        calculations unreliable.</p>
+                </section>
+            </article>
+        </main>
+
+    </div>
+    {% endblock navbar %}
+</body>
+
+</html>
